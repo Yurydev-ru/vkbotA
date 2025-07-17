@@ -4,14 +4,32 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "build:rspack": "NUXT_BUILDER=rspack nuxt build",
     "dev": "nuxt dev",
+    "dev:rspack": "NUXT_BUILDER=rspack nuxi dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@nuxt/content": "^3.6.3",
+    "@nuxt/image": "^1.10.0",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@pinia/nuxt": "^0.11.1",
+    "@vueuse/nuxt": "^13.5.0",
+    "better-sqlite3": "^12.2.0",
     "nuxt": "^4.0.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^2.6.2",
+    "@nuxt/icon": "^1.15.0",
+    "@nuxt/rspack-builder": "^4.0.0",
+    "@types/node": "^24.0.14",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^3.0.1"
   }
 }
